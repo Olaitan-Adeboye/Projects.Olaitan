@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">  -->
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+     /* background-color: #f4f4f4;*/
+      background-image: url('static/upload/logo3.png');
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      /*background-color: #333;*/
+      color: #050011;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 40px;
+      /*background-color: #fff;*/
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+   /* h2 {
+      color: #333;
+      margin: 150px;
+      padding: 20px;
+    }*/
+
+    p {
+      line-height: 1.5;
+      margin: auto;
+      padding: 30px;
+
+    }
+    .align-right {
+    text-align: right;
+    }
+    .left-aligned-text {
+    text-align: left;
+    }
+    nav{
+    display: inline-block;
+    margin-inline: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+nav a{
+    margin-inline:20px;
+    text-decoration:wavy;
+    color:rgb(95, 235, 235);
+    border:2px solid rgb(231, 229, 229);
+    padding:10px;
+    border-radius: 50px;
+    
+}
+
+nav a:hover {
+    background-color: rgb(7, 2, 37);
+    color: gray;
+}
+
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      max-width: 48%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="{{url_for('home')}}">Home</a>
+    <a href="{{url_for('about')}}">About Us</a>
+    <a href="{{url_for('library')}}">Library</a>
+    <a href="{{url_for('contact')}}">Contact Us</a>
+    <a href="{{url_for('purchase')}}">Purchase</a>
+    <a href="{{url_for('FAQ')}}">FAQ</a>
+</nav>
+</nav>
+
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <section>
+    <p>Nestled in the vibrant heart of Lagos, Ace Books stands as a haven<br> for bibliophiles and literary enthusiasts alike. <br>
+       Established in the year 2020, this literary gem emerged from the <br>collective passion for the written word shared by a group of eight friends.<br>
+       More than just a bookstore, Ace Books is a testament to the power of dreams,<br> offering a welcoming space where seekers of new adventures, <br>moments of quiet reflection, and connections with fellow book lovers converge.<br>
+       In the midst of the bustling city, Ace Books beckons as a destination where dreams<br> are sparked, imaginations are kindled, and stories come to life, creating <br>a unique and enriching experience for all who step through its doors.
+    </p>
+
+   
+
+    <h2>MEET THE CEO</h2>
+    <p class="left-aligned-text">Olaitan Adeboye is a driven and innovative Applied AI student <br>with a passion for technology and artificial intelligence.<br> With a keen interest in leveraging AI to solve real-world problems, <br>Olaitan has embarked on a journey to explore the intersection of AI <br>and practical applications.
+    <br>Olaitan has successfully developed a website integrated with a chatbot,<br> showcasing the practical implementation of AI in enhancing user experiences <br>and providing personalized interactions.<br> This project demonstrates Olaitan's ability to conceptualize, design, <br>and deploy AI-powered solutions.</p>
+    <img src="static/upload/ceo.jpeg" alt="CEO Image" width="300" height="500">
+  
+
+
+    
+    
+  </section>
+
+</body>
+</html>

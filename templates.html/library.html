@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"> 
+  <title>Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      background-image: url('static/upload/logo3.png');
+      background-size: cover;
+    }
+
+    header {
+     background-color: transparent;
+      color: #000000;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    nav{ 
+border: 5px;
+}
+  
+    .book {
+      max-width: 200px;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .book img {
+      width: 100%;
+      height: auto;
+    }
+
+    .book h3 {
+      text-align: center;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="{{url_for('home')}}">Home</a>
+    <a href="{{url_for('about')}}">About Us</a>
+    <a href="{{url_for('library')}}">Library</a>
+    <a href="{{url_for('contact')}}">Contact Us</a>
+    <a href="{{url_for('purchase')}}">Purchase</a>
+    <a href="{{url_for('FAQ')}}">FAQ</a>
+</nav>
+
+</body>
+</html>
+
+
+  <header>
+    <h1>Library</h1>
+  </header>
+
+  <section>
+    <div class="book">
+      <a href="purchase">
+      <img src="static/upload/The kind bee.png" alt="Book Cover 1">
+      <h3>The Kind Bee/$3.50</h3>  </a>
+      <h5>out of stock</h5>
+    </div>
+  
+    <div class="book">
+      <a href="purchase">
+      <img src="static/upload/abandoned kingdom.png" alt="Book Cover 2">
+      <h3>Abandoned Kingdom/$4.49</h3> </a>
+    </div>
+    <div class="book">
+      <a href="purchase">
+        <img src="static/upload/Walk into the Shadow.png" alt="Book Cover 2">
+        <h3>Walk into the Shadow/$4.55</h3> </a>
+      </div>
+      <div class="book">
+        <a href="purchase">
+        <img src="static/upload/soul.jpg" alt="Book Cover 2">
+        <h3>Soul/$4.49</h3> </a>
+      </div>
+
+      <div class="book">
+        <a href="purchase">
+        <img src="static/upload/dream of a distant home.jpg" alt="Book Cover 2">
+        <h3>Dream of a Distant Home/$4.29</h3> </a>
+      </div>
+
+      <div class="book">
+        <a href="purchase">
+        <img src="static/upload/thread.jpg" alt="Book Cover 2">
+        <h3>Thread/$4.00</h3> </a>
+      </div>
+
+      <div class="book">
+        <a href="purchase">
+        <img src="static/upload/death island.png" alt="Book Cover 2">
+        <h3>Death Island/$4.00</h3></a> 
+      </div>
+
+        <div class="book">
+          <a href="purchase">
+          <img src="static/upload/rated mania.png" alt="Book Cover 2">
+          <h3>Rated Mania/$3.50</h3> </a>
+        </div>
+        <div class="book">
+          <a href="purchase">
+          <img src="static/upload/the bride groom.jpg" alt="Book Cover 2">
+          <h3>The Bribe&groom/$4.00</h3> </a>
+        <h5>out of stock</h5>
+        </div>
+      
+        <div class="book">
+          <a href="purchase">
+          <img src="static/upload/Honest Queen.png" alt="Book Cover 2">
+          <h3>Honest Queen/$4.30</h3></a>
+        </div>
+
+    <!-- Add more book entries as needed -->
+
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,356 @@
+/* Your CSS styles here */
+
+
+h2{
+    font-size: 38px;
+}
+
+nav{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.library-nav{
+    border: 5px solid;
+}
+nav a{
+    margin-inline:10px;
+    text-decoration:wavy;
+    color:rgb(69, 196, 196);
+    border:5px solid rgb(231, 229, 229);
+    padding:10px;
+    border-radius: 50px;
+    
+}
+
+nav a:hover {
+    background-color: rgb(7, 2, 37);
+    color: gray;
+}
+
+footer {
+    background-color: #5b94e4;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+chatbot {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin-right:70px;
+}
+
+.img-container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img{
+    width:20%;
+    height:50px;
+    object-fit: contain;
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+chat {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    color: #ccc;
+    
+}
+chatbot{
+    position:absolute;
+    bottom: 100px;
+    right:70px
+
+}
+
+ .user-input {
+    width: 400px;
+    height: 40px;
+    padding: 15px;
+    outline: none;
+    border-radius: 40px;
+    font-size: 20px;
+    border-style: none;
+    color: #ccc;
+    
+}
+
+button {
+    /* padding: 5px 10px;
+    background-color: teal;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px; */
+
+    width: 400px;
+    height: 40px;
+    padding: 15px;
+    outline: none;
+    border-radius: 40px;
+    font-size: 20px;
+    border-style: none; 
+}
+/* Your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('/static/upload/new_back.png');
+    background-size: cover;
+    
+}
+
+header {
+    background-color:#22837b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+ 
+.picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 200px;
+}
+
+.picture {
+    text-align: center;
+   /* animation: fadeInUp 1s ease both; /* Add animation to pictures */
+}
+
+.picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #6786a8;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+chatbot {
+    margin-top: 20px;
+    text-align: right;
+}
+
+/*.chatbot-container {
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(211, 194, 194, 0.1);
+    color: white;
+    position:fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    border: 1px solid #6786a8;
+    z-index: 1000;
+
+}*/
+
+    
+
+chat {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    color: white; /* Change the color property to white */
+}
+
+chatbot {
+    position: absolute;
+    bottom: 300px;
+    right: 70px;
+}
+
+.user-input {
+    width: 70%;
+    padding: 5px;
+    color: white;
+}
+
+button {
+    padding: 5px 30px;
+    background-color: #3e5a87;
+    color: white;
+    border: none;
+    border-radius: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #0b306b;
+}
+
+.chatbot-message {
+    color: white;
+}
+.chat-header {
+    color: white;
+}
+.bot {
+    color: white;
+}
+
+css
+/* Chatbot container */
+.chatbot-container {
+    position: fixed; /* Fixed position so it's always visible */
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it appears above other elements */
+    color: transparent;
+}
+
+/* Chatbot image */
+.chatbot-image {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 50%; /* Make it round */
+    cursor: pointer; /* Show pointer cursor on hover */
+    position: revert;
+    
+    /* Add any other styling properties you want */
+}
+
+
+
+body {
+    font-family: emoji;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  label,
+  input,
+  textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .section {
+    background-color: #bafff9; 
+    padding: 20px;
+    margin: 10px;
+  }
+  /* Existing CSS styles */
+
+.align-right {
+    text-align: right; /* Align text to the right */
+    text-align: right;
+}
+
+  /* Existing CSS styles */
+
+/* Add scroll margin to create trigger point */
+#section3 {
+    scroll-margin-top: 100px; /* Adjust as needed */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in animation to paragraphs in Section 3 when scrolled to */
+#section3 p {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Adjust opacity and animation delay for each paragraph */
+#section3 p:nth-child(1) {
+    animation-delay: 0.5s; /* Delay for the first paragraph */
+}
+#section3 p:nth-child(2) {
+    animation-delay: 1s; /* Delay for the second paragraph */
+}
+#section3 p:nth-child(3) {
+    animation-delay: 1.5s; /* Delay for the third paragraph */
+}
+
+.section1 {
+    background-color: transparent; /* Reddish color for section 1 */
+}
+
+.section2 {
+    background-color: #b5f7fc; /* Blueish color for section 2 */
+
+}
+
+.section3 {
+    background-color: #bef6f8; /* Greenish color for section 3 */
+}
+
+.section4 {
+    background-color: #bef6f8;; /* Yellowish color for section 4 */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
