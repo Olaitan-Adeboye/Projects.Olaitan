@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"> 
+
+    <title>Ace Books</title>
+</head>
+<body>
+   
+    <header>
+        <h1> WELCOME TO ACE BOOKS</h1>
+        <h3>Unveiling the magic of reading</h3>
+        <h3>The Haven for Bibliophiles</h3>
+       
+    </header>
+    
+<nav>
+    <a href="{{url_for('home')}}">HOME</a>
+    <a href="{{url_for('about')}}">ABOUT US</a>
+    <a href="{{url_for('library')}}">LIBRARY</a>
+    <a href="{{url_for('contact')}}">CONTACT US</a>
+    <a href="{{url_for('purchase')}}">PURCHASE</a>
+    <a href="{{url_for('FAQ')}}">FAQ</a>
+  
+</nav>
+
+<div class="chatbot-container">
+    <a href="static/upload/Sam.html">
+        <img class="chatbot-image"
+        src="static/upload/samantha.webp"
+        alt="Chatbot">
+    </a>
+</div>
+    
+        <div class="chat-header">
+            
+            
+        </div>
+        <div class="chat-box">
+            
+            {% for message in messages %}
+                <div class="{{ message['sender'] }}">{{ message['content'] }}</div>
+    
+            {% endfor %}
+            
+        </div>
+        <form method="POST" action="/send_message">
+            <input type="text" name="user_input" placeholder="Ask Sam...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    
+<!-- First Section -->
+<section class="section section1" id="section1">
+    <h2></h2>
+    <p></p>
+</section>
+
+<!-- Third Section -->
+<section class="section section3" id="section3">
+    <h2>Ace Books</h2>
+    <h3><p>Ace Books is home to a wide range of books,<br> magazines, and other reading materials.<br> We also offer book ordering, special events,<br> author signings, and book clubs to engage with ,<br>the community and promote reading.</p></h3>
+    <h3><p class="align-right">Our bookstore is constantly updating our <br>collection with new and exciting titles. <br>From bestsellers to hidden gems, <br>we have something for everyone.</p></h3>
+    <h3><p>We're proud to offer a variety of events<br> for book lovers of all ages.<br> From author signings to book clubs, <br>there's always something happening at Ace Books</p> </h3>
+</section>
+
+
+<!-- Second Section -->
+<section class="section section2" id="section2">
+    <h2>New Arrivals</h2>
+    <div class="picture-grid">
+        <!-- Collection of pictures will be added here -->
+        <div class="picture">
+            <a href="purchase">
+            <img src="static/upload/thread.jpg" alt="Thread">
+            <p>$4.00</p> </a>
+        </div>
+        <div class="picture">
+            <a href="purchase">
+            <img src="static/upload/rated mania.png" alt="Rated Mania">
+            <p>$3.50</p></a>
+        </div>
+        <div class="picture">
+            <a href="purchase">
+            <img src="static/upload/soul.jpg" alt="Soul">
+            <p>$4.49</p></a>
+        </div>
+        <!-- Add more pictures as needed -->
+    </div>
+    
+    
+</section>
+
+
+<!-- Fourth Section -->
+<section class="section section4" id="section4">
+    <h2>Our Goal<br>
+        Ace Books is focused on the journey to rejuvenate the dying reading culture by:</h2>
+    <h3><p>Providing a safe and serene environment for readers</p></h3>
+    <h3><p class="align-right">Providing a wide array of books on every aspect imaginable</p></h3>
+    <h3><p>Book donations a few times a year</p></h3>
+    <h3><p class="align-right">Seminars/Lectures on emotional intelligence / mental health and how what you read affects these</p></h3>
+</section>
+
+
+<footer>
+    <!-- Footer Content -->
+    
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
